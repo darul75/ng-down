@@ -1,0 +1,29 @@
+{
+  "name": "ng-down",
+  "version": "0.0.1",
+  "author": {
+    "name": "Julien Valéry",
+    "email": "darul75@gmail.com"
+  },
+  "homepage": "https://github.com/darul75/ng-down",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darul75/ng-down.git"
+  },
+  "keywords": [
+    "angular",
+    "scroll",
+    "bottom",
+    "control",
+    "ui"
+  ],
+  "main": "./src/ng-down.js",
+  "dependencies": {
+    "angular": "=1.2.0-rc.2",
+    "angular-sanitize": "=1.2.0-rc.2",
+    "jquery": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "=1.2.0-rc.2"
+  }
+}
