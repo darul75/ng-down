@@ -1,27 +1,18 @@
-ng-slider [![NPM version](https://badge.fury.io/js/ng-slider.png)](http://badge.fury.io/js/ng-slider) [![Build Status](https://travis-ci.org/darul75/ng-slider.png?branch=master)](https://travis-ci.org/darul75/ng-slider) [![Total views](https://sourcegraph.com/api/repos/github.com/darul75/ng-slider/counters/views.png)](https://sourcegraph.com/github.com/darul75/ng-slider)
+ng-slider [![NPM version](https://badge.fury.io/js/ng-down.png)](http://badge.fury.io/js/ng-down) [![Build Status](https://travis-ci.org/darul75/ng-down.png?branch=master)](https://travis-ci.org/darul75/ng-down) [![Total views](https://sourcegraph.com/api/repos/github.com/darul75/ng-down/counters/views.png)](https://sourcegraph.com/github.com/darul75/ng-down)
 =====================
 
-Angular directive slider control.
-
-Welcome to a fork from awesome job of Egor Khmelev https://github.com/egorkhmelev/jslider
+AngularJS directive bottom page trigger.
 
 Why
 -------------
 
-Original implementation provides very nice features but too much for my needs, this one just simplified.
+I was using it for pagination feature when user has reached bottom of page or is just scrolling down.
 
-Source files were divided in several files, and not angular integrated.
-
-It takes me time to make it works and all jquery code is included in directive, I do not know if it is the best thing to do today ;)
-
-Sceenshot
--------------
-
-![angular slider demo](http://darul75.github.io/ng-slider/images/screenshot.png "angular slider demo screenshot")
+Relatively simple but effective.
 
 Demo
 -------------
-http://darul75.github.io/ng-slider/
+http://darul75.github.io/ng-down/
 
 
 Installation
@@ -30,7 +21,7 @@ Installation
 Using npm:
 
 ```
-npm install ng-slider
+npm install ng-down
 ```
 
 How to use it
@@ -40,62 +31,35 @@ You should already have script required for Angular, note sanitize module use.
 
 ```html
 <script type="text/javascript" src="angular.min.js"></script>
-<script type="text/javascript" src="angular-sanitize.min.js"></script>
 ```
 
 to the list above, you should add:
 
 ```html
-<link rel="stylesheet" type="text/css" href="ng-slider.min.css">
+<link rel="stylesheet" type="text/css" href="ng-down.min.css">
 ```
 
 ```html
-<script type="text/javascript" src="ng-slider.min.js"></script>
+<script type="text/javascript" src="ng-down.min.js"></script>
 ```
 
-Then, inject `ngSlider` in your application module:
+Then, inject `ngDown` in your application module:
 
 ```javascript
-angular.module('myApp', ['ngSlider']);
+angular.module('myApp', ['ngDown']);
 ```
 
-and then just add an `div` with `slider` directive name attribute, `value` and `options` scope variable attribute.
+and then just put on dom element directive name `when-bottom` and `action` scope function attribute.
 
 ```html
-<input ng-model="value" type="text" id="mySlider1" slider options="options" />
+<div when-bottom action='currentFn()' timer='3000'>
 ```
 
-'value' your slider scope end value, as string.
-'options' slider scope options value as json.
-'id' attribute, put different if several slides on same page.
-
-```javascript
-$scope.value = "10";
-// $scope.value = "10;15"; FOR DOUBLE VIEW
-```
+'action' your scope function which will be triggered when scrolling down.
 
 ### Options
 
-Options for your slider in json format {from:.....}
-
-* `from`: start value
-* `to`: end value
-* `step`: step value
-* `dimension`: string, example " $"
-* `scale`: array for scale
-
-
-### Build
-
-You can run the tests by running
-
-```
-npm install
-```
-or
-```
-npm test
-```
+* `timer`: 'timer' lock is ms, to avoid many call
 
 assuming you already have `grunt` installed, otherwise you also need to do:
 
