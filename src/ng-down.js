@@ -4,7 +4,7 @@
 	angular.module('ngDown', [])
 	.directive('whenBottom', ['$timeout', function(timeout) {
 	    return {
-	    	restrict : 'AE',
+			restrict : 'AE',
 			scope: { action:'&'},
 	    	link : function(scope, elm, attrs) {	    
 		      
