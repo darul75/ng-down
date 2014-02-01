@@ -1,4 +1,4 @@
-ng-slider [![NPM version](https://badge.fury.io/js/ng-down.png)](http://badge.fury.io/js/ng-down) [![Build Status](https://travis-ci.org/darul75/ng-down.png?branch=master)](https://travis-ci.org/darul75/ng-down) [![Total views](https://sourcegraph.com/api/repos/github.com/darul75/ng-down/counters/views.png)](https://sourcegraph.com/github.com/darul75/ng-down)
+ng-down [![NPM version](https://badge.fury.io/js/ng-down.png)](http://badge.fury.io/js/ng-down) [![Build Status](https://travis-ci.org/darul75/ng-down.png?branch=master)](https://travis-ci.org/darul75/ng-down) [![Total views](https://sourcegraph.com/api/repos/github.com/darul75/ng-down/counters/views.png)](https://sourcegraph.com/github.com/darul75/ng-down)
 =====================
 
 AngularJS directive bottom page trigger.
