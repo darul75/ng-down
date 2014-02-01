@@ -6,7 +6,7 @@ AngularJS directive bottom page trigger.
 Why
 -------------
 
-I was using it for pagination feature when user has reached bottom of page or is just scrolling down.
+I was using it for pagination feature when user has reached bottom of page.
 
 Relatively simple but effective.
 
